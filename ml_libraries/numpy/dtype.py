@@ -1,0 +1,21 @@
+import numpy as np
+arr=np.array([1,2,3,4,5])
+arrs=np.array(['apple','banana','cherry'])
+print(arr.dtype)
+print(arrs.dtype)
+#creating an array with defined data type
+arrd=np.array([1,2,3,4],dtype='S')
+print(arrd)
+print(arrd.dtype)
+arri=np.array([1,2,3,4],dtype='i4')
+print(arri)
+print(arri.dtype)
+#change the datatype
+arri1=np.array([1.23,322.433,67.44,9])
+arri2=arri1.astype('i')
+print(arri2)
+print(arri2.dtype)
+arri4=np.array([1,0,3])
+arri3=arri4.astype(bool)
+print(arri3)
+print(arri3.dtype)
